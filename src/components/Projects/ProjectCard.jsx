@@ -60,8 +60,8 @@ const ProjectCard = ({ name, description, img, tech ,link }) => {
                             )
                         }
                     </div>
-                    <Link to={"https://tailus.io"}
-                        className="group relative inline-block overflow-hidden border border-black px-8 py-3 focus:outline-none focus:ring"
+                    <Link to={link}
+                        className="group relative inline-block overflow-hidden decoration-0 border-black px-8 py-3 focus:outline-none focus:ring"
                         href="#"
                     >
                         <span
