@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import illustration1 from '../../assets/illustration3.png'
 
 const Intro = () => {
@@ -16,10 +17,19 @@ const Intro = () => {
 
                 <h2 className='mb-5 Normal-case'> Well-versed in <span className='text-blue-300'>GIT</span> and <span className='text-blue-300'>GITHUB</span> for efficient version control, collaboration, and code management in team environments.</h2>
 
+                <Link to={'https://drive.google.com/drive/folders/10X7jhkRBD8N8ijXy2ihyeMq84Q61ZRFq?usp=sharing'}>
+                <button
+                    type="button"
+                    className="rounded-md bg-white px-3 py-2 text-sm font-semibold text-black shadow-sm hover:bg-white/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+                >
+                    Checkout my Resume
+                </button>
+                </Link>
+
             </div>
 
             <img className="max-w-xl rounded-md object-cover w-full h-auto" src={illustration1} alt="" />
-            
+
         </div>
     )
 }
