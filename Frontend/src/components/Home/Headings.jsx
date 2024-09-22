@@ -33,7 +33,7 @@ const Headings = () => {
             </defs>
           </svg>
         </div>
-        
+
         <div className="flex flex-col text-center justify-center">
           <div className='flex text-center justify-center'>
             <h1 className="text-4xl font-bold tracking-tight text-white sm:text-6xl">
@@ -44,12 +44,14 @@ const Headings = () => {
           <h1 className="text-3xl font-bold tracking-tight text-white sm:text-5xl">I'm Atul Saxena</h1>
           <AnimatedSkills />
           <div className="mt-10 flex items-center justify-center gap-x-2">
-            <button
-              type="button"
-              className="rounded-md bg-white px-3 py-2 text-sm font-semibold text-black shadow-sm hover:bg-white/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
-            >
-              Contact me
-            </button>
+            <Link to={'/contact'}>
+              <button
+                type="button"
+                className="rounded-md bg-white px-3 py-2 text-sm font-semibold text-black shadow-sm hover:bg-white/80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-black"
+              >
+                Contact me
+              </button>
+            </Link>
             <Link to={'/projects'}>
               <button
                 type="button"

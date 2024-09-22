@@ -22,7 +22,7 @@ const Projects = () => {
 
         <ProjectCard name={'Food Heaven'} description={'A food haven web design for the guys who loves to eat and explore new cuisines...'} img={foodheaven} tech={['VITE','React JS', 'Context API', 'Firebase']} link={'https://github.com/Atul-Saxena/Foodie-Heaven.git'}/>
 
-        <ProjectCard name={'My Portfolio'} description={'Know more about me and my projects...'} img={portfolio} tech={['VITE','React JS']} link={'https://github.com/Atul-Saxena/My-Portfolio.git'}/>
+        <ProjectCard name={'My Portfolio'} description={'Want to know more about me, what I do and my projects?'} img={portfolio} tech={['VITE','React JS']} link={'https://github.com/Atul-Saxena/My-Portfolio.git'}/>
 
         </div>
       </div>

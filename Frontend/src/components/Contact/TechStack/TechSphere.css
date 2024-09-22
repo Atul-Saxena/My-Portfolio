@@ -1,0 +1,344 @@
+ .contactFormOverlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Add background color or other styling to make it overlay */
+    background-color: rgba(255, 255, 255, 0.9);
+    /* Example semi-transparent white overlay */
+    z-index: 99999;
+    /* Adjust z-index to ensure the form is on top */
+}
+
+.techStack {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background-image: url(${___CSS_LOADER_URL_REPLACEMENT_0___});
+    background-size: cover;
+    background-position: center;
+}
+
+.intro-text-lefts {
+    flex: 1 1;
+    max-width: 100%;
+    color: Black;
+    text-align: left;
+}
+
+.tagcloud-container {
+    flex: 1 1;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* Center the tag cloud */
+    align-items: center;
+    /* Align items in the center */
+    padding: 20px;
+}
+
+.intro-headings {
+    text-align: left;
+    font-size: 2.5rem;
+    color: black;
+}
+
+.intro-headings::after {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    border-radius: 20px;
+    background-color: #ff6347;
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+
+.tagcloud {
+    font-size: 16px;
+    color: #ffffff;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+    transform: scale(1);
+}
+
+
+.tagcloud:hover {
+    /* background-color: #555; */
+    /* color: #fff; */
+    transform: scale(1.06);
+}
+
+@media screen and (max-width: 768px) {
+    .tagcloud {
+        font-size: 12px;
+        /* Adjust font size for smaller screens */
+        gap: 5px;
+        /* Reduce gap between tags */
+    }
+
+    .tagcloud-container {
+        padding: 0%;
+    }
+
+    .techStack {
+        padding: 30px;
+    }
+}
+
+
+.intro-text-lefts .highlight {
+    color: #ff6347;
+    font-size: 1.5rem;
+    font-weight: 600;
+    /* Adjust the highlight color in the text */
+}
+
+.image-sphere {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.contactButton_Techs {
+    padding: 10px 20px;
+    background-color: #019eff;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    border: 2px solid white !important;
+    /* Additional button styles */
+
+    /* Transition for hover effect */
+    transition: transform 0.3s ease-in-out;
+}
+
+
+
+/* Example animation for the button */
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 123, 255, 0.7);
+    }
+
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 20px rgba(0, 123, 255, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(0, 123, 255, 0);
+    }
+}
+
+.contactButton_Techs {
+    animation: pulse 2s infinite;
+}
+
+.modal {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* min-height: 90vh; */
+    padding: 10px;
+    border-radius: 30px;
+    font-family: 'Poppins', sans-serif;
+    /* background: linear-gradient(115deg, #56d8e4 10%, #3f01ea 90%); */
+    background-color: rgb(0, 0, 0, 0.3);
+}
+
+.close-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #818181;
+    /* Adjust the color to your preference */
+    outline: none;
+    padding: 0;
+}
+
+.close-button:hover {
+    color: #333;
+    /* Change the color on hover if desired */
+}
+
+.container-tech {
+    max-width: 800px;
+    background: #f5f5f5;
+    border-radius: 30px;
+    width: 800px;
+    padding: 25px 40px 10px 40px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.7);
+}
+
+.container-tech .text {
+    text-align: center;
+    font-size: 41px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    background: -webkit-linear-gradient(right, #56d8e4, #3f01ea, #56d8e4, #0128ea);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+}
+
+.container-tech form {
+    padding: 50px 0 0 0;
+}
+
+.container-tech form .form-row {
+    display: flex;
+    margin: 32px 0;
+}
+
+form .form-row .input-data {
+    width: 100%;
+    height: 40px;
+    margin: 0 20px;
+    position: relative;
+}
+
+form .form-row .textarea {
+    height: 70px;
+}
+
+.input-data input,
+.textarea textarea {
+    display: block;
+    background: #f5f5f5;
+    width: 100%;
+    height: 100%;
+    border: none;
+    outline: none;
+    font-size: 17px;
+    border-bottom: 2px solid rgba(0, 0, 0, 0.12);
+}
+
+.input-data input:focus~label,
+.textarea textarea:focus~label,
+.input-data input:valid~label,
+.textarea textarea:valid~label {
+    transform: translateY(-20px);
+    font-size: 14px;
+    color: #3498db;
+}
+
+.textarea textarea {
+    resize: none;
+    padding-top: 10px;
+}
+
+.input-data label {
+    position: absolute;
+    pointer-events: none;
+    bottom: 10px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.textarea label {
+    width: 100%;
+    bottom: 40px;
+    background: #f5f5f5;
+}
+
+.input-data .underline {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+}
+
+.input-data .underline:before {
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 100%;
+    background: #3498db;
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.input-data input:focus~.underline:before,
+.input-data input:valid~.underline:before,
+.textarea textarea:focus~.underline:before,
+.textarea textarea:valid~.underline:before {
+    transform: scale(1);
+}
+
+.submit-btn .input-data {
+    overflow: hidden;
+    height: 45px !important;
+    width: 25% !important;
+    border-radius: 20px;
+}
+
+.submit-btn .input-data .inner {
+    height: 100%;
+    width: 300%;
+    position: absolute;
+    left: -100%;
+    background: -webkit-linear-gradient(right, #56d8e4, #3f01ea, #56d8e4, #0128ea);
+    transition: all 0.4s;
+}
+
+.submit-btn .input-data:hover .inner {
+    left: 0;
+}
+
+.submit-btn .input-data input {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+}
+
+@media (max-width: 700px) {
+    .container-tech .text {
+        font-size: 30px;
+    }
+
+    .container-tech form {
+        padding: 10px 0 0 0;
+    }
+
+    .container-tech form .form-row {
+        display: block;
+    }
+
+    form .form-row .input-data {
+        margin: 35px 0 !important;
+    }
+
+    .submit-btn .input-data {
+        width: 40% !important;
+    }
+}

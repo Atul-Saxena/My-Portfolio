@@ -20,7 +20,6 @@ const ProjectCard = ({ name, description, img, tech ,link }) => {
                                         xmlns="http://www.w3.org/2000/svg"
                                         fill="none"
                                         viewBox="0 0 24 24"
-                                        stroke-width="1.5"
                                         stroke="currentColor"
                                         class="-ms-1 me-1.5 size-4"
                                     >
@@ -42,7 +41,6 @@ const ProjectCard = ({ name, description, img, tech ,link }) => {
                                             xmlns="http://www.w3.org/2000/svg"
                                             fill="none"
                                             viewBox="0 0 24 24"
-                                            stroke-width="1.5"
                                             stroke="currentColor"
                                             class="-ms-1 me-1.5 size-4"
                                         >

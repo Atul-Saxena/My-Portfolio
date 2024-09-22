@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import {
   BrowserRouter as Router,
   Route,
@@ -10,12 +9,11 @@ import Navbar from './components/Navbar';
 import Home from './components/Home/Home';
 import Projects from './components/Projects/Projects';
 import About from './components/About/About';
-import Resume from './components/Resume/Resume';
+import Contact from './components/Contact/Contact';
 import Footer from './components/Footer';
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
@@ -26,7 +24,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/projects" element={<Projects />} />
           <Route path="/about" element={<About />} />
-          <Route path="/resume" element={<Resume />} />
+          <Route path="/contact" element={<Contact />} />
           <Route path="*" element={<Navigate to="/" />} />
         </Routes>
         <Footer />
