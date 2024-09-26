@@ -18,8 +18,8 @@ const Form = () => {
                 alert('Please enter a valid email address');
             }
             else {
-                // const res = await axios.post('http://localhost:3000/email', {
-                    const res = await axios.post('https://my-portfolio-kappa-five-44.vercel.app/', {
+                const res = await axios.post('http://localhost:3000', {
+                    // const res = await axios.post('https://my-portfolio-kappa-five-44.vercel.app', {
                     name,
                     email,
                     message,
