@@ -32,7 +32,6 @@ const Form = () => {
         setName('');
         setEmail('');
         setMessage('');
-        
     }
 
     if (open) {

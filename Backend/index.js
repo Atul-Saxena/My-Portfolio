@@ -10,6 +10,7 @@ const PORT = 3000;
 // Middleware
 app.use(cors());
 app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
 
 app.post('/email', (req, res) => {
     const transporter = nodemailer.createTransport({
@@ -32,8 +33,8 @@ app.post('/email', (req, res) => {
             console.log(error);
             res.status(500).send('Error sending email');
         } else {
-            console.log('Email sent: ' + info.response);
-            res.status(200).send('Email sent');
+            // console.log('Email sent: ' + info.response);
+            res.status(200).send(`Name: ${req.body.name}\nEmail: ${req.body.email}\nMessage: ${req.body.message}`);
         }
     });
 });
