@@ -6,7 +6,6 @@ import TagCloud from "TagCloud";
 const TechShpere = () => {
   // Animation settings for Text Cloud
   useEffect(() => {
-    return () => {
       const container = ".tagcloud";
       const texts = [
         "React JS",
@@ -85,7 +84,7 @@ const TechShpere = () => {
       };
 
       TagCloud(container, texts, options,);
-    };
+
   }, []);
 
   return (
