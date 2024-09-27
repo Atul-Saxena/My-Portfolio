@@ -27,6 +27,7 @@
     "react-pdf": "^9.1.1",
     "react-router-dom": "^6.26.2",
     "reactjs-popup": "^2.0.6",
+    "rsuite": "^5.71.0",
     "TagCloud": "^2.5.0"
   },
   "devDependencies": {

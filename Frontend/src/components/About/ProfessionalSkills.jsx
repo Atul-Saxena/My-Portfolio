@@ -12,7 +12,6 @@ import {
   SiNextdotjs,
   SiExpress 
 } from "react-icons/si";
-import { TbBrandGolang } from "react-icons/tb";
 
 const ProfessionalSkills = () => {
   return (

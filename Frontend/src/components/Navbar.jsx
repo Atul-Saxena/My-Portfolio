@@ -10,7 +10,7 @@ function Navbar() {
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <Link to={'/'} className="text-white font-bold text-xl">
-              MyBrand
+              MY PORTFOLIO
             </Link>
           </div>
           <div className="hidden md:flex space-x-4 items-center">

@@ -2,6 +2,7 @@ import React from 'react'
 import Intro from './Intro'
 import ProfessionalSkills from './ProfessionalSkills'
 import Tools from './Tools'
+import Footer from '../Footer'
 
 const About = () => {
   return (
@@ -9,6 +10,7 @@ const About = () => {
     <Intro/>
     <ProfessionalSkills/>
     <Tools/>
+    <Footer />
     </>
   )
 }

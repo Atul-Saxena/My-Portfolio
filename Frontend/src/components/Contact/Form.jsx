@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import Loader from './Loader';
 import axios from 'axios';
 
 const Form = () => {
@@ -6,8 +7,10 @@ const Form = () => {
     const [email, setEmail] = useState('');
     const [message, setMessage] = useState('');
     const [open, setOpen] = useState(false)
+    const [loader, setloader] = useState(false)
 
     const handleSubmit = async (e) => {
+        setloader(true)
         e.preventDefault();
         try {
             if (!name || !email || !message) {
@@ -18,12 +21,12 @@ const Form = () => {
                 alert('Please enter a valid email address');
             }
             else {
-                const res = await axios.post('http://localhost:3000', {
-                    // const res = await axios.post('https://my-portfolio-kappa-five-44.vercel.app', {
+                const res = await axios.post('https://my-portfolio-azure-one-21.vercel.app/', {
                     name,
                     email,
                     message,
                 });
+                setloader(false)
                 setOpen(true)
             }
         } catch (error) {
@@ -33,6 +36,13 @@ const Form = () => {
         setName('');
         setEmail('');
         setMessage('');
+    }
+    if(loader){
+        return (
+            <div className="flex flex-col justify-evenly items-center px-4 py-8 rounded relative w-1/2" role="alert">
+                <Loader />
+            </div>
+        )
     }
 
     if (open) {

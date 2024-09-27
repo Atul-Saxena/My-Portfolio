@@ -93,8 +93,6 @@ const TechShpere = () => {
       <div className="techStack">
 
         <div className="tagcloud-container">
-
-          {/* span tag className must be "tagcloud"  */}
           <span className="tagcloud text-center"></span>
         </div>
       </div>
